@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!-- Indica que el documento usa HTML5 -->
+<html lang="es">
+
+<head>
+
+    <!-- Permite usar caracteres especiales y acentos -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea adaptable a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Reproducción de las Jirafas</title>
+
+    <!-- Conecta el archivo CSS para el diseño -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Título principal -->
+    <h1 id="titulo">Reproducción de las Jirafas</h1>
+
+    <!-- Introducción -->
+    <p>
+        Las jirafas se reproducen de manera sexual
+        y normalmente tienen una sola cría.
+    </p>
+
+    <!-- Botón jQuery -->
+    <button id="boton">Ocultar / Mostrar Imagen</button>
+
+    <br><br>
+
+    <!-- Imagen principal -->
+    <img id="imagen"
+    src="repro.PNG"
+    width="450">
+
+    <!-- Subtítulo -->
+    <h2>Embarazo</h2>
+
+    <!-- Información sobre el embarazo -->
+    <p>
+        El embarazo de una jirafa dura aproximadamente
+        15 meses.
+    </p>
+
+    <!-- Información sobre el nacimiento -->
+    <p>
+        Después de ese tiempo nace una sola cría.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Nacimiento</h2>
+
+    <!-- Explicación del parto -->
+    <p>
+        Las jirafas bebés nacen de pie y caen
+        al suelo al momento del parto.
+    </p>
+
+    <!-- Explicación del desarrollo rápido -->
+    <p>
+        A los pocos minutos ya pueden levantarse
+        y caminar.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Cuidado de la cría</h2>
+
+    <!-- Información sobre el cuidado de la madre -->
+    <p>
+        La madre protege y alimenta a su cría
+        durante los primeros meses de vida.
+    </p>
+
+    <!-- Información sobre la protección -->
+    <p>
+        Las crías permanecen cerca de su madre
+        para mantenerse seguras.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Etapa adulta</h2>
+
+    <!-- Información sobre la madurez -->
+    <p>
+        Las jirafas alcanzan la madurez en varios años.
+    </p>
+
+    <!-- Información sobre competencia entre machos -->
+    <p>
+        Los machos suelen competir entre ellos
+        para poder reproducirse.
+    </p>
+
+    <!-- Dato curioso -->
+    <h2>Dato curioso</h2>
+
+    <!-- Información curiosa -->
+    <p>
+        Una jirafa recién nacida puede medir
+        casi 2 metros de altura.
+    </p>
+
+    <!-- Espacios -->
+    <br><br>
+
+    <!-- Botón para volver al menú principal -->
+    <a href="index.html">
+        <button>Volver al menú</button>
+    </a>
+
+    <!-- Código jQuery -->
+    <script>
+
+        // Espera a que cargue la página
+        $(document).ready(function(){
+
+            // Evento click del botón
+            $("#boton").click(function(){
+
+                // Oculta y muestra la imagen
+                $("#imagen").toggle(1000);
+
+            });
+
+            // Cambia el color del título
+            $("#titulo").hover(function(){
+
+                $(this).css("color", "purple");
+
+            }, function(){
+
+                $(this).css("color", "black");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

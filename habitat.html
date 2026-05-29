@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<!-- Indica que el documento usa HTML5 -->
+<html lang="es">
+
+<head>
+
+    <!-- Permite usar caracteres especiales y acentos -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte a celulares y tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Hábitat de las Jirafas</title>
+
+    <!-- Conecta el archivo CSS con el diseño -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Título principal -->
+    <h1 id="titulo">Hábitat de las Jirafas</h1>
+
+    <!-- Introducción -->
+    <p>
+        Las jirafas viven principalmente en África.
+    </p>
+
+    <!-- Botón jQuery -->
+    <button id="boton">Ocultar / Mostrar Imagen</button>
+
+    <br><br>
+
+    <!-- Imagen principal -->
+    <img id="imagen"
+    src="habi.PNG"
+    width="450">
+
+    <!-- Subtítulo -->
+    <h2>¿Dónde viven?</h2>
+
+    <!-- Información sobre el lugar donde viven -->
+    <p>
+        Las jirafas habitan en sabanas, praderas
+        y zonas abiertas con árboles.
+    </p>
+
+    <!-- Información sobre su preferencia de hábitat -->
+    <p>
+        Prefieren lugares donde haya árboles altos,
+        especialmente acacias.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Clima</h2>
+
+    <!-- Información sobre el clima -->
+    <p>
+        Viven en lugares cálidos y secos.
+    </p>
+
+    <!-- Adaptación al clima -->
+    <p>
+        Están adaptadas a soportar altas temperaturas.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Convivencia</h2>
+
+    <!-- Información sobre los grupos -->
+    <p>
+        Las jirafas suelen vivir en grupos llamados
+        manadas.
+    </p>
+
+    <!-- Explicación de cómo funcionan los grupos -->
+    <p>
+        Estos grupos pueden cambiar constantemente
+        y no siempre permanecen juntos.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Depredadores</h2>
+
+    <!-- Información sobre los depredadores -->
+    <p>
+        Los principales depredadores de las jirafas
+        son los leones y las hienas.
+    </p>
+
+    <!-- Forma de defensa -->
+    <p>
+        Las jirafas utilizan sus fuertes patas para defenderse.
+    </p>
+
+    <!-- Dato curioso -->
+    <h2>Dato curioso</h2>
+
+    <!-- Información curiosa -->
+    <p>
+        Gracias a su gran altura, las jirafas pueden
+        observar a los depredadores desde muy lejos.
+    </p>
+
+    <!-- Espacio -->
+    <br><br>
+
+    <!-- Botón para volver al menú principal -->
+    <a href="index.html">
+        <button>Volver al menú</button>
+    </a>
+
+    <!-- Código jQuery -->
+    <script>
+
+        // Espera a que cargue la página
+        $(document).ready(function(){
+
+            // Evento click del botón
+            $("#boton").click(function(){
+
+                // Oculta y muestra la imagen
+                $("#imagen").toggle(1000);
+
+            });
+
+            // Cambia el color del título
+            $("#titulo").hover(function(){
+
+                $(this).css("color", "orange");
+
+            }, function(){
+
+                $(this).css("color", "black");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

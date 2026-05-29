@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<!-- Indica que el documento utiliza HTML5 -->
+<html lang="es">
+
+<head>
+
+    <!-- Permite usar caracteres especiales y acentos -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte a celulares y tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Crecimiento</title>
+
+    <!-- Conecta el archivo CSS para el diseño -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Título principal -->
+    <h1 id="titulo">Crecimiento de las Jirafas</h1>
+
+    <!-- Botón jQuery -->
+    <button id="boton">Ocultar / Mostrar Imagen</button>
+
+    <br><br>
+
+    <!-- Imagen principal -->
+    <img id="imagen"
+    src="creci.PNG"
+    width="450">
+
+    <!-- Introducción -->
+    <p>
+        Las jirafas crecen muy rápido desde que nacen.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Cuando nacen</h2>
+
+    <!-- Información sobre el tamaño al nacer -->
+    <p>
+        Una jirafa bebé mide aproximadamente entre
+        1.7 y 2 metros de altura.
+    </p>
+
+    <!-- Información sobre el peso -->
+    <p>
+        Pueden pesar entre 50 y 70 kilogramos.
+    </p>
+
+    <!-- Información sobre sus primeros movimientos -->
+    <p>
+        A los pocos minutos de nacer ya pueden
+        ponerse de pie y caminar.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Primeros meses</h2>
+
+    <!-- Alimentación inicial -->
+    <p>
+        Las crías se alimentan de la leche de su madre.
+    </p>
+
+    <!-- Cambio de alimentación -->
+    <p>
+        También comienzan a comer hojas y plantas
+        poco a poco.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Etapa juvenil</h2>
+
+    <!-- Desarrollo físico -->
+    <p>
+        Su cuello y patas continúan creciendo rápidamente.
+    </p>
+
+    <!-- Aprendizaje de alimentación -->
+    <p>
+        Aprenden a buscar alimento en árboles altos.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>Etapa adulta</h2>
+
+    <!-- Tamaño en la adultez -->
+    <p>
+        Las jirafas adultas pueden medir entre
+        4 y 6 metros de altura.
+    </p>
+
+    <!-- Dato sobre su altura -->
+    <p>
+        Son los animales terrestres más altos del mundo.
+    </p>
+
+    <!-- Espacio -->
+    <br>
+
+    <!-- Botón para volver al menú principal -->
+    <a href="index.html">
+        <button>Volver al menú</button>
+    </a>
+
+    <!-- Código jQuery -->
+    <script>
+
+        // Espera a que la página cargue
+        $(document).ready(function(){
+
+            // Ocultar y mostrar imagen
+            $("#boton").click(function(){
+
+                $("#imagen").toggle(1000);
+
+            });
+
+            // Cambiar color del título
+            $("#titulo").hover(function(){
+
+                $(this).css("color", "green");
+
+            }, function(){
+
+                $(this).css("color", "black");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

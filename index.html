@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!-- Indica que el documento está en HTML5 -->
+<html lang="es">
+
+<head>
+
+    <!-- Permite usar caracteres especiales y acentos -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte a celulares y pantallas pequeñas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña -->
+    <title>Jirafas</title>
+
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Título principal -->
+    <h1 id="titulo">LAS JIRAFAS</h1>
+
+    <!-- Descripción -->
+    <p>
+        Conoce más sobre las jirafas y su vida.
+    </p>
+
+    <!-- Botón para ocultar y mostrar -->
+    <button id="boton">Ocultar / Mostrar Imagen</button>
+
+    <br><br>
+
+    <!-- MENU ARRIBA -->
+    <div class="menu">
+
+        <!-- Botón crecimiento -->
+        <a href="crecimiento.html">
+            <button>Crecimiento</button>
+        </a>
+
+        <!-- Botón alimentación -->
+        <a href="alimentacion.html">
+            <button>Alimentación</button>
+        </a>
+
+        <!-- Botón hábitat -->
+        <a href="habitat.html">
+            <button>Hábitat</button>
+        </a>
+
+        <!-- Botón reproducción -->
+        <a href="reproduccion.html">
+            <button>Reproducción</button>
+        </a>
+
+    </div>
+
+    <br><br>
+
+    <!-- Imagen principal -->
+    <img id="jirafa"
+    src="https://images.unsplash.com/photo-1547721064-da6cfb341d50"
+    width="400">
+
+    <!-- Código jQuery -->
+    <script>
+
+        // Espera a que toda la página cargue
+        $(document).ready(function(){
+
+            // Evento click del botón
+            $("#boton").click(function(){
+
+                // Oculta o muestra la imagen lentamente
+                $("#jirafa").toggle(1000);
+
+            });
+
+            // Cambia el color del título al pasar el mouse
+            $("#titulo").hover(function(){
+
+                $(this).css("color", "orange");
+
+            }, function(){
+
+                $(this).css("color", "black");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

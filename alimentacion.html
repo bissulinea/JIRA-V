@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!-- Indica que el documento está en HTML5 -->
+<html lang="es">
+
+<head>
+
+    <!-- Permite usar caracteres especiales y acentos -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea adaptable a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Alimentación de las Jirafas</title>
+
+    <!-- Conecta el archivo CSS para el diseño -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Título principal -->
+    <h1 id="titulo">Alimentación de las Jirafas</h1>
+
+    <!-- Botón jQuery -->
+    <button id="boton">Ocultar / Mostrar Imagen</button>
+
+    <br><br>
+
+    <!-- Imagen principal -->
+    <img id="imagen"
+    src="alime.PNG"
+    width="400">
+
+    <!-- Introducción -->
+    <p>
+        Las jirafas son animales herbívoros,
+        lo que significa que solo comen plantas.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>¿Qué comen?</h2>
+
+    <!-- Información sobre su comida -->
+    <p>
+        Las jirafas comen hojas, ramas tiernas,
+        flores y frutos.
+    </p>
+
+    <!-- Comida favorita -->
+    <p>
+        Su alimento favorito son las hojas
+        de los árboles de acacia.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>¿Cómo comen?</h2>
+
+    <!-- Explicación del cuello -->
+    <p>
+        Gracias a su largo cuello pueden alcanzar
+        hojas muy altas que otros animales no alcanzan.
+    </p>
+
+    <!-- Explicación de la lengua -->
+    <p>
+        También tienen una lengua larga y resistente
+        que les ayuda a tomar ramas con espinas.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>¿Cuánto comen?</h2>
+
+    <!-- Cantidad de comida -->
+    <p>
+        Una jirafa adulta puede comer hasta
+        30 kilogramos de hojas al día.
+    </p>
+
+    <!-- Tiempo que pasan comiendo -->
+    <p>
+        Pasan muchas horas alimentándose
+        para obtener suficiente energía.
+    </p>
+
+    <!-- Subtítulo -->
+    <h2>¿Cómo toman agua?</h2>
+
+    <!-- Explicación del agua -->
+    <p>
+        Las jirafas obtienen mucha agua de las plantas
+        que comen.
+    </p>
+
+    <!-- Forma de tomar agua -->
+    <p>
+        Cuando toman agua deben abrir sus patas
+        delanteras para alcanzar el suelo.
+    </p>
+
+    <!-- Dato curioso -->
+    <h2>Dato curioso</h2>
+
+    <!-- Información curiosa -->
+    <p>
+        La lengua de una jirafa puede medir
+        aproximadamente 45 centímetros.
+    </p>
+
+    <!-- Espacio -->
+    <br><br>
+
+    <!-- Botón para regresar al menú principal -->
+    <a href="index.html">
+        <button>Volver al menú</button>
+    </a>
+
+    <!-- Código jQuery -->
+    <script>
+
+        // Espera a que cargue la página
+        $(document).ready(function(){
+
+            // Evento del botón
+            $("#boton").click(function(){
+
+                // Oculta y muestra la imagen
+                $("#imagen").toggle(1000);
+
+            });
+
+            // Cambia el color del título
+            $("#titulo").hover(function(){
+
+                $(this).css("color", "green");
+
+            }, function(){
+
+                $(this).css("color", "black");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

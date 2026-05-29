@@ -1,0 +1,81 @@
+/* Diseño general de toda la página */
+body{
+
+    /* Color de fondo */
+    background-color: #f5deb3;
+
+    /* Centra todo el texto */
+    text-align: center;
+
+    /* Tipo de letra */
+    font-family: Arial;
+
+    /* Elimina márgenes externos */
+    margin: 0;
+
+    /* Espacio interno */
+    padding: 20px;
+}
+
+/* Diseño del título principal */
+h1{
+
+    /* Color del texto */
+    color: #6b3e26;
+}
+
+/* Diseño de los párrafos */
+p{
+
+    /* Tamaño de letra */
+    font-size: 18px;
+}
+
+/* Diseño de las imágenes */
+img{
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+}
+
+/* Diseño normal de los botones */
+button{
+
+    /* Color de fondo */
+    background-color: #8b5a2b;
+
+    /* Color del texto */
+    color: white;
+
+    /* Quita el borde */
+    border: none;
+
+    /* Espacio interno del botón */
+    padding: 15px 25px;
+
+    /* Espacio externo */
+    margin: 10px;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Tamaño de letra */
+    font-size: 16px;
+
+    /* Cambia el cursor a manita */
+    cursor: pointer;
+}
+
+/* Diseño cuando el mouse pasa sobre el botón */
+button:hover{
+
+    /* Cambia el color del botón */
+    background-color: #5c3b1e;
+}
+
+/* Espacio debajo del menú */
+.menu{
+
+    /* Separación inferior */
+    margin-bottom: 20px;
+}
