@@ -1,2 +1,2 @@
 # CV-MEJORADO
-Esta página web presenta un currículum vitae digital de forma organizada y profesional, mostrando información personal, habilidades, estudios y experiencia mediante un diseño creado con HTML y CSS. Y JQUERY
+Página web informativa sobre las jirafas, donde se muestra su crecimiento, hábitat, alimentación, reproducción y forma de vida, con el propósito de conocer más sobre esta especie y sus características principales.
